@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<style>
+    #inner {
+        background-color: pink;
+        height: 500px;
+        width: 500px;
+    }
+</style>
+
+<body>
+    <div id="app">
+        <div id="inner" @click="innerClick">
+            <input type="button" value="按钮" @click.stop="btnClick">
+        </div>
+    </div>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: {
+
+            },
+            methods: {
+                innerClick() {
+                    console.log(12);
+                },
+                btnClick() {
+                    console.log(55);
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

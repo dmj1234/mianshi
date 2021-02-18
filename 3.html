@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <input type="button" value="按钮" :title="btn" :id="cust+'你过来啊'">
+    </div>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                btn: '逆火来啊',
+                cust: '自定义'
+            }
+        })
+    </script>
+</body>
+
+</html>
